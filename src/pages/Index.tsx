@@ -39,9 +39,6 @@ const Index = () => {
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="text-2xl font-playfair text-primary">Les Petites Forges</div>
             <div className="hidden md:flex space-x-6">
-              <a href="#about" className="text-accent hover:text-primary transition-colors">
-                À propos
-              </a>
               <a href="#gallery" className="text-accent hover:text-primary transition-colors">
                 Galerie
               </a>
