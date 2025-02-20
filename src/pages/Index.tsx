@@ -99,9 +99,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-playfair text-center mb-16">
             Situé au centre historique d'Auxonne, venez vivre l'authenticité de cette ville d'eau bordée par la Saône, goûter aux charmes 
-            de cette cité Bonaparte proche de Dole et Dijon (Accès A39 à 5'). Ce gîte atypique de 120m2 dans un ancien hôtel particulier 
-            vous offrira de grands volumes : pièce de 50m2 avec vrai BABY FOOT et CLIM, une cuisine ouverte et une d'été dans le patio privé, 
-            une chambre avec alcôve, deux salons. Vous disposez de 5 lits, une douche/wc séparés, prêt 5 vélos. TV Canal+,WIFI,PS3.
+            de cette cité Bonaparte, proche de Dole et Dijon (Accès A39 à 5 minutes). Ce gîte atypique de 120m2 dans un ancien hôtel particulier, 
+            vous offrira de grands volumes : pièce climatisée de 50m2 avec vrai Baby Foot, une cuisine ouverte et une cuisine d'été dans le patio privé, 
+            une chambre avec alcôve, ainsi que deux salons. Vous disposerez de 5 lits, une douche/wc séparés, et 5 vélos à disposition pour vos escapades.
+            Pour vos instants cocooning, une TV Canal+, une PS3 et le WiFi sont disponibles.
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
