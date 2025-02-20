@@ -38,7 +38,7 @@ const Index = () => {
       >
         <nav className="bg-white/80 backdrop-blur-md border-b">
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div className="text-2xl font-playfair text-primary">Le Gîte Bourguignon</div>
+            <div className="text-2xl font-playfair text-primary">Les Petites Forges</div>
             <div className="hidden md:flex space-x-6">
               <a href="#about" className="text-accent hover:text-primary transition-colors">
                 À propos
@@ -72,7 +72,7 @@ const Index = () => {
               transition={{ duration: 0.8 }}
               className="text-4xl md:text-6xl font-playfair text-white mb-6"
             >
-              Charmant gîte aux portes de Dijon
+              Charmant gîte dans l'hypercentre d'Auxonne, à 30 minutes de Dijon
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -98,27 +98,30 @@ const Index = () => {
       <section className="py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-playfair text-center mb-16">
-            Une expérience unique en Bourgogne
+            Situé au centre historique d'Auxonne, venez vivre l'authenticité de cette ville d'eau bordée par la Saône, goûter aux charmes 
+            de cette cité Bonaparte proche de Dole et Dijon (Accès A39 à 5'). Ce gîte atypique de 120m2 dans un ancien hôtel particulier 
+            vous offrira de grands volumes : pièce de 50m2 avec vrai BABY FOOT et CLIM, une cuisine ouverte et une d'été dans le patio privé, 
+            une chambre avec alcôve, deux salons. Vous disposez de 5 lits, une douche/wc séparés, prêt 5 vélos. TV Canal+,WIFI,PS3.
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 icon: <MapPinIcon className="w-8 h-8" />,
-                title: "Emplacement idéal",
+                title: "Le logement",
                 description:
-                  "À seulement 10 minutes du centre historique de Dijon et des vignobles prestigieux.",
+                  "Spacieux Appartement de 120m2 au 2ème étage d'un ancien hôtel particulier - Accès par escalier - 5 lits dont 1 double King Size et 3 lits 90X190 (plus 2 lits bébé)- 2 lieux de couchage séparés - 5 Vélos prêtés gratuitement pour balade - Café (Dolce Gusto), thé, chocolat offerts - Accès au Jura et à Côte d'Or et ses vignes (Dole, Pesmes à 12 kms, Dijon et la Côte d Or à 25 kms, Beaune et Bèze à 35 kms) - Grande pièce climatisée",
               },
               {
                 icon: <UserCircleIcon className="w-8 h-8" />,
-                title: "Accueil personnalisé",
+                title: "Accès des voyageurs",
                 description:
-                  "Nous vous accueillons personnellement et partageons nos meilleures adresses.",
+                  "Accès à Patio privé sans vis à vis et cuisine d'été pour détente, agrémenté d'une cuisine d'été pour vos repas. Stationnement gratuit à proximité immédiate du gîte.",
               },
               {
                 icon: <CheckCircleIcon className="w-8 h-8" />,
-                title: "Confort premium",
+                title: "L'accueil",
                 description:
-                  "Des équipements haut de gamme pour un séjour des plus agréables.",
+                  "Lors des jours ouvrables, le salon de coiffure Styl Coif (Rachel) situé au rez de chaussée vous accueillera et vous remettra les clés de votre appartement. En dehors de ces jours et passé 19H00, je viendrai à votre rencontre. A bientôt !",
               },
             ].map((feature, index) => (
               <motion.div
@@ -229,7 +232,7 @@ const Index = () => {
                 <input
                   type="text"
                   className="w-full border-2 border-gray-200 rounded-lg p-2"
-                  placeholder="Votre nom"
+                  placeholder="Votre nom..."
                 />
               </div>
               <div>
@@ -263,19 +266,19 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-playfair mb-4">Le Gîte Bourguignon</h3>
+              <h3 className="text-xl font-playfair mb-4">Les Petites Forges</h3>
               <p className="text-white/80">
-                Votre havre de paix aux portes de Dijon, au cœur de la Bourgogne.
+                Votre havre de paix aux portes de Dijon, au cœur de la Bourgogne et son patrimoine.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-playfair mb-4">Contact</h3>
               <p className="text-white/80">
-                123 Rue de la Vigne
+                Rue Carnot
                 <br />
-                21000 Dijon
+                21130 Auxonne
                 <br />
-                +33 1 23 45 67 89
+                +33 6 66 66 66 66
               </p>
             </div>
             <div>
@@ -287,11 +290,14 @@ const Index = () => {
                 <a href="#" className="text-white/80 hover:text-white transition-colors">
                   Instagram
                 </a>
+                <a href="#" className="text-white/80 hover:text-white transition-colors">
+                  AirBNB
+                </a>
               </div>
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-            <p>© 2024 Le Gîte Bourguignon. Tous droits réservés.</p>
+            <p>© 2025 Les Petites Forges. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
