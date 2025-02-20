@@ -107,21 +107,21 @@ const Index = () => {
             {[
               {
                 icon: <MapPinIcon className="w-8 h-8" />,
-                title: "Emplacement idéal",
+                title: "Le logement",
                 description:
-                  "À seulement 10 minutes du centre historique de Dijon et des vignobles prestigieux.",
+                  "Spacieux Appartement de 120m2 au 2ème étage d'un ancien hôtel particulier - Accès par escalier - 5 lits dont 1 double King Size et 3 lits 90X190 (plus 2 lits bébé)- 2 lieux de couchage séparés - 5 Vélos prêtés gratuitement pour balade - Café (Dolce Gusto), thé, chocolat offerts - Accès au Jura et à Côte d'Or et ses vignes (Dole, Pesmes à 12 kms, Dijon et la Côte d Or à 25 kms, Beaune et Bèze à 35 kms) - Grande pièce climatisée",
               },
               {
                 icon: <UserCircleIcon className="w-8 h-8" />,
-                title: "Accueil personnalisé",
+                title: "Accès des voyageurs",
                 description:
-                  "Nous vous accueillons personnellement et partageons nos meilleures adresses.",
+                  "Accès à Patio privé sans vis à vis et cuisine d'été pour détente, agrémenté d'une cuisine d'été pour vos repas. Stationnement gratuit à proximité immédiate du gîte.",
               },
               {
                 icon: <CheckCircleIcon className="w-8 h-8" />,
-                title: "Confort premium",
+                title: "L'accueil",
                 description:
-                  "Des équipements haut de gamme pour un séjour des plus agréables.",
+                  "Lors des jours ouvrables, le salon de coiffure Styl Coif (Rachel) situé au rez de chaussée vous accueillera et vous remettra les clés de votre appartement. En dehors de ces jours et passé 19H00, je viendrai à votre rencontre. A bientôt !",
               },
             ].map((feature, index) => (
               <motion.div
@@ -189,7 +189,6 @@ const Index = () => {
                   <DatePicker
                     selected={startDate}
                     onChange={(date) => setStartDate(date)}
-                    selectsStart
                     startDate={startDate}
                     endDate={endDate}
                     minDate={new Date()}
@@ -202,7 +201,6 @@ const Index = () => {
                   <DatePicker
                     selected={endDate}
                     onChange={(date) => setEndDate(date)}
-                    selectsEnd
                     startDate={startDate}
                     endDate={endDate}
                     minDate={startDate}
@@ -266,19 +264,19 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-playfair mb-4">Le Gîte Bourguignon</h3>
+              <h3 className="text-xl font-playfair mb-4">Les Petites Forges</h3>
               <p className="text-white/80 text-justify">
-                Votre havre de paix aux portes de Dijon, au cœur de la Bourgogne.
+                Votre havre de paix aux portes de Dijon, au cœur de la Bourgogne et son patrimoine.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-playfair mb-4">Contact</h3>
               <p className="text-white/80 text-justify">
-                123 Rue de la Vigne
+                Rue Carnot
                 <br />
-                21000 Dijon
+                21130 Auxonne
                 <br />
-                +33 1 23 45 67 89
+                +33 6 66 66 66 66
               </p>
             </div>
             <div>
@@ -297,7 +295,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-            <p className="text-justify">© 2024 Le Gîte Bourguignon. Tous droits réservés.</p>
+            <p className="text-justify">© 2025 Les Petites Forges. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
