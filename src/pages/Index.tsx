@@ -57,8 +57,8 @@ const Index = () => {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-            alt="Gîte Bourguignon"
+            src="/lovable-uploads/c6312621-3316-4a3b-b213-93fb51ce6f13.png"
+            alt="Salon principal avec baby-foot"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40"></div>
@@ -150,23 +150,53 @@ const Index = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-              "https://images.unsplash.com/photo-1600573472550-8090b5e0745e",
-              "https://images.unsplash.com/photo-1600566752355-35792bedcfea",
-              "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0",
-              "https://images.unsplash.com/photo-1600607687644-c7171b42498e",
-              "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
+              {
+                src: "/lovable-uploads/c6312621-3316-4a3b-b213-93fb51ce6f13.png",
+                alt: "Salon principal avec baby-foot"
+              },
+              {
+                src: "/lovable-uploads/c6082850-1130-4300-907e-75e895b69418.png",
+                alt: "Salon avec canapé et espace détente"
+              },
+              {
+                src: "/lovable-uploads/e20dc12d-aedc-494d-9ed4-7525fb438a38.png",
+                alt: "Chambre avec espace bureau"
+              },
+              {
+                src: "/lovable-uploads/fc5fbc71-135d-40e5-bdf9-3e6fafbad1fd.png",
+                alt: "Salon avec fauteuils classiques"
+              },
+              {
+                src: "/lovable-uploads/c5616400-ebf3-4c47-893a-87d9f5a111cf.png",
+                alt: "Salle à manger"
+              },
+              {
+                src: "/lovable-uploads/824b6737-c270-427b-b274-eaf4f59b8ddc.png",
+                alt: "Vue du balcon"
+              },
+              {
+                src: "/lovable-uploads/758f8916-6f6e-4e3d-8dba-48551f75b25f.png",
+                alt: "Chambre avec lit double"
+              },
+              {
+                src: "/lovable-uploads/7fc414f8-0f40-4af0-a0cd-d58d7ee7b512.png",
+                alt: "Patio et espace extérieur"
+              },
+              {
+                src: "/lovable-uploads/83ee295c-fbaf-4e03-a849-24dace1b1741.png",
+                alt: "Coin détente du patio"
+              },
             ].map((image, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="relative aspect-square overflow-hidden rounded-lg"
+                className="relative aspect-square overflow-hidden rounded-lg shadow-lg"
               >
                 <img
-                  src={image}
-                  alt={`Intérieur du gîte ${index + 1}`}
+                  src={image.src}
+                  alt={image.alt}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
