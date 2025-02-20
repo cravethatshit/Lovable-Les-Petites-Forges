@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import DatePicker from "react-datepicker";
@@ -108,21 +107,21 @@ const Index = () => {
             {[
               {
                 icon: <MapPinIcon className="w-8 h-8" />,
-                title: "Le logement",
+                title: "Emplacement idéal",
                 description:
-                  "Spacieux Appartement de 120m2 au 2ème étage d'un ancien hôtel particulier - Accès par escalier - 5 lits dont 1 double King Size et 3 lits 90X190 (plus 2 lits bébé)- 2 lieux de couchage séparés - 5 Vélos prêtés gratuitement pour balade - Café (Dolce Gusto), thé, chocolat offerts - Accès au Jura et à Côte d'Or et ses vignes (Dole, Pesmes à 12 kms, Dijon et la Côte d Or à 25 kms, Beaune et Bèze à 35 kms) - Grande pièce climatisée",
+                  "À seulement 10 minutes du centre historique de Dijon et des vignobles prestigieux.",
               },
               {
                 icon: <UserCircleIcon className="w-8 h-8" />,
-                title: "Accès des voyageurs",
+                title: "Accueil personnalisé",
                 description:
-                  "Accès à Patio privé sans vis à vis et cuisine d'été pour détente, agrémenté d'une cuisine d'été pour vos repas. Stationnement gratuit à proximité immédiate du gîte.",
+                  "Nous vous accueillons personnellement et partageons nos meilleures adresses.",
               },
               {
                 icon: <CheckCircleIcon className="w-8 h-8" />,
-                title: "L'accueil",
+                title: "Confort premium",
                 description:
-                  "Lors des jours ouvrables, le salon de coiffure Styl Coif (Rachel) situé au rez de chaussée vous accueillera et vous remettra les clés de votre appartement. En dehors de ces jours et passé 19H00, je viendrai à votre rencontre. A bientôt !",
+                  "Des équipements haut de gamme pour un séjour des plus agréables.",
               },
             ].map((feature, index) => (
               <motion.div
@@ -136,7 +135,7 @@ const Index = () => {
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-playfair mb-3">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
+                <p className="text-muted-foreground text-justify">{feature.description}</p>
               </motion.div>
             ))}
           </div>
@@ -267,19 +266,19 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-playfair mb-4">Les Petites Forges</h3>
-              <p className="text-white/80">
-                Votre havre de paix aux portes de Dijon, au cœur de la Bourgogne et son patrimoine.
+              <h3 className="text-xl font-playfair mb-4">Le Gîte Bourguignon</h3>
+              <p className="text-white/80 text-justify">
+                Votre havre de paix aux portes de Dijon, au cœur de la Bourgogne.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-playfair mb-4">Contact</h3>
-              <p className="text-white/80">
-                Rue Carnot
+              <p className="text-white/80 text-justify">
+                123 Rue de la Vigne
                 <br />
-                21130 Auxonne
+                21000 Dijon
                 <br />
-                +33 6 66 66 66 66
+                +33 1 23 45 67 89
               </p>
             </div>
             <div>
@@ -298,7 +297,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-            <p>© 2025 Les Petites Forges. Tous droits réservés.</p>
+            <p className="text-justify">© 2024 Le Gîte Bourguignon. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
