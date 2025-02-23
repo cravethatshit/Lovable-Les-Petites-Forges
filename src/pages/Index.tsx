@@ -315,7 +315,7 @@ const Index = () => {
                 <a href="#" className="text-white/80 hover:text-white transition-colors">
                   Instagram
                 </a>
-                <a href="#" className="text-white/80 hover:text-white transition-colors">
+                <a href="https://www.airbnb.fr/rooms/25652792?search_mode=regular_search&adults=1&check_in=2025-05-04&check_out=2025-05-09&children=0&infants=0&source_impression_id=p3_1740340046_P3MB3hbuRkfhlHpv&previous_page_section_name=1000&federated_search_id=c8f95dde-8730-483d-a125-ca85191f7aa4" className="text-white/80 hover:text-white transition-colors">
                   AirBNB
                 </a>
               </div>
